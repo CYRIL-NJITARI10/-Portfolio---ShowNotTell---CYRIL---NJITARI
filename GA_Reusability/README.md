@@ -1,4 +1,4 @@
-# [Portofolio] - ShowNotTell - CYRIL - NJITARI - #2 -  GA_Reuseability
+# [Portofolio] - ShowNotTell - CYRIL - NJITARI - #6 -  GA_Reuseability
 
 ## Introduction
 GA_Reuseability is an advanced software package that provides a flexible, extensible framework for solving optimization problems using genetic algorithms. It is designed to be adaptable for a wide range of problems, such as the classic Traveling Salesperson Problem (TSP) and games like Mastermind, showcasing the power of Object-Oriented Programming (OOP) principles in creating reusable and maintainable code.

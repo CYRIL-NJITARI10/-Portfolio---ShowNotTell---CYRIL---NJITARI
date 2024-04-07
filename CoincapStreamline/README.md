@@ -1,4 +1,4 @@
-# [Portofolio] - ShowNotTell - CYRIL - NJITARI - #1 - CoinCap API
+# [Portofolio] - ShowNotTell - CYRIL - NJITARI - #1 - CoincapStreamline API
 
 ## Problem Description
 The cryptocurrency market is highly volatile and can present significant opportunities and risks for investors. Having access to real-time market data, analyses, and personalized notifications can greatly enhance investment decisions. However, real-time processing and analysis of large volumes of market data can be complex, requiring a robust, scalable, and flexible architecture.
