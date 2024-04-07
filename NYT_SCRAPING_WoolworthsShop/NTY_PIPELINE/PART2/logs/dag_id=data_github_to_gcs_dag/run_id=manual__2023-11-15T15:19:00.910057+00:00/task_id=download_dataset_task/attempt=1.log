@@ -1,0 +1,22 @@
+[2023-11-15T15:19:04.915+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=data_github_to_gcs_dag/run_id=manual__2023-11-15T15:19:00.910057+00:00/task_id=download_dataset_task permission to 509
+[2023-11-15T15:19:04.946+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=data_github_to_gcs_dag/run_id=manual__2023-11-15T15:19:00.910057+00:00/task_id=download_dataset_task permission to 509
+[2023-11-15T15:19:04.973+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_github_to_gcs_dag.download_dataset_task manual__2023-11-15T15:19:00.910057+00:00 [queued]>
+[2023-11-15T15:19:04.982+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_github_to_gcs_dag.download_dataset_task manual__2023-11-15T15:19:00.910057+00:00 [queued]>
+[2023-11-15T15:19:04.983+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-15T15:19:04.995+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): download_dataset_task> on 2023-11-15 15:19:00.910057+00:00
+[2023-11-15T15:19:05.004+0000] {standard_task_runner.py:57} INFO - Started process 4014 to run task
+[2023-11-15T15:19:05.006+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'data_github_to_gcs_dag', 'download_dataset_task', 'manual__2023-11-15T15:19:00.910057+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/data_github_to_gcp.py', '--cfg-path', '/tmp/tmp26xrfqqe']
+[2023-11-15T15:19:05.009+0000] {standard_task_runner.py:85} INFO - Job 104: Subtask download_dataset_task
+[2023-11-15T15:19:05.021+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:193: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-11-15T15:19:05.137+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=data_github_to_gcs_dag/run_id=manual__2023-11-15T15:19:00.910057+00:00/task_id=download_dataset_task permission to 509
+[2023-11-15T15:19:05.140+0000] {task_command.py:416} INFO - Running <TaskInstance: data_github_to_gcs_dag.download_dataset_task manual__2023-11-15T15:19:00.910057+00:00 [running]> on host 2952db3161f1
+[2023-11-15T15:19:05.224+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_github_to_gcs_dag' AIRFLOW_CTX_TASK_ID='download_dataset_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-15T15:19:00.910057+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-15T15:19:00.910057+00:00'
+[2023-11-15T15:19:05.228+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-11-15T15:19:05.229+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'curl -sSL https://github.com/Georgeshermann/getting_data/blob/main/movies.csv > /opt/***/movies.csv']
+[2023-11-15T15:19:05.245+0000] {subprocess.py:86} INFO - Output:
+[2023-11-15T15:19:05.979+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-11-15T15:19:06.007+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_github_to_gcs_dag, task_id=download_dataset_task, execution_date=20231115T151900, start_date=20231115T151904, end_date=20231115T151906
+[2023-11-15T15:19:06.063+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-15T15:19:06.092+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

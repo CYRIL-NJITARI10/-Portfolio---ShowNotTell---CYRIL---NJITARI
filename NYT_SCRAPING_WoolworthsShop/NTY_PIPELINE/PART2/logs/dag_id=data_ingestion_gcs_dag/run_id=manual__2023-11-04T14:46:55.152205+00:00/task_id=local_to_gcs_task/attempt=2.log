@@ -1,0 +1,46 @@
+[2023-11-04T14:57:01.407+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2023-11-04T14:46:55.152205+00:00/task_id=local_to_gcs_task permission to 509
+[2023-11-04T14:57:01.436+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2023-11-04T14:46:55.152205+00:00/task_id=local_to_gcs_task permission to 509
+[2023-11-04T14:57:01.467+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task manual__2023-11-04T14:46:55.152205+00:00 [queued]>
+[2023-11-04T14:57:01.480+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task manual__2023-11-04T14:46:55.152205+00:00 [queued]>
+[2023-11-04T14:57:01.482+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-11-04T14:57:01.496+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2023-11-04 14:46:55.152205+00:00
+[2023-11-04T14:57:01.505+0000] {standard_task_runner.py:57} INFO - Started process 536 to run task
+[2023-11-04T14:57:01.509+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'local_to_gcs_task', 'manual__2023-11-04T14:46:55.152205+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpv7c1pxy1']
+[2023-11-04T14:57:01.512+0000] {standard_task_runner.py:85} INFO - Job 28: Subtask local_to_gcs_task
+[2023-11-04T14:57:01.525+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:193: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-11-04T14:57:01.562+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=data_ingestion_gcs_dag/run_id=manual__2023-11-04T14:46:55.152205+00:00/task_id=local_to_gcs_task permission to 509
+[2023-11-04T14:57:01.567+0000] {task_command.py:416} INFO - Running <TaskInstance: data_ingestion_gcs_dag.local_to_gcs_task manual__2023-11-04T14:46:55.152205+00:00 [running]> on host 2995566d4c01
+[2023-11-04T14:57:01.646+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_ingestion_gcs_dag' AIRFLOW_CTX_TASK_ID='local_to_gcs_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-04T14:46:55.152205+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-04T14:46:55.152205+00:00'
+[2023-11-04T14:57:01.648+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 29, in upload_to_gcs
+    client = storage.Client()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/storage/client.py", line 166, in __init__
+    super(Client, self).__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 657, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 650, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 270, in _get_explicit_environ_credentials
+    credentials, project_id = load_credentials_from_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 114, in load_credentials_from_file
+    raise exceptions.DefaultCredentialsError(
+google.auth.exceptions.DefaultCredentialsError: File /.google/credentials/google_credentials.json was not found.
+[2023-11-04T14:57:01.665+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=data_ingestion_gcs_dag, task_id=local_to_gcs_task, execution_date=20231104T144655, start_date=20231104T145701, end_date=20231104T145701
+[2023-11-04T14:57:01.678+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 28 for task local_to_gcs_task (File /.google/credentials/google_credentials.json was not found.; 536)
+[2023-11-04T14:57:01.721+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-04T14:57:01.746+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,6 @@
+requests
+kafka_python==2.0.2
+psycopg2-binary==2.9.9
+apache-airflow==2.8.2
+pyspark==3.5.0
+unidecode==1.3.7

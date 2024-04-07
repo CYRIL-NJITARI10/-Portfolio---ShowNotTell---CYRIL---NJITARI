@@ -1,0 +1,89 @@
+{
+  "version": 4,
+  "terraform_version": "1.6.2",
+  "serial": 13,
+  "lineage": "68e53102-f606-4eaf-5284-3ca72b9fd54d",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "google_bigquery_dataset",
+      "name": "dataset",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "access": [
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "role": "OWNER",
+                "routine": [],
+                "special_group": "",
+                "user_by_email": "data-eng-zoomcamp@angular-land-402908.iam.gserviceaccount.com",
+                "view": []
+              },
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "role": "OWNER",
+                "routine": [],
+                "special_group": "projectOwners",
+                "user_by_email": "",
+                "view": []
+              },
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "role": "READER",
+                "routine": [],
+                "special_group": "projectReaders",
+                "user_by_email": "",
+                "view": []
+              },
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "role": "WRITER",
+                "routine": [],
+                "special_group": "projectWriters",
+                "user_by_email": "",
+                "view": []
+              }
+            ],
+            "creation_time": 1698578020113,
+            "dataset_id": "trips_data_all",
+            "default_collation": "",
+            "default_encryption_configuration": [],
+            "default_partition_expiration_ms": 0,
+            "default_table_expiration_ms": 0,
+            "delete_contents_on_destroy": false,
+            "description": "",
+            "effective_labels": {},
+            "etag": "oJ4HySlVmWT/B7KNZnKaiw==",
+            "friendly_name": "",
+            "id": "projects/angular-land-402908/datasets/trips_data_all",
+            "is_case_insensitive": false,
+            "labels": {},
+            "last_modified_time": 1698578020113,
+            "location": "europe-west6",
+            "max_time_travel_hours": "",
+            "project": "angular-land-402908",
+            "self_link": "https://bigquery.googleapis.com/bigquery/v2/projects/angular-land-402908/datasets/trips_data_all",
+            "storage_billing_model": "",
+            "terraform_labels": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
