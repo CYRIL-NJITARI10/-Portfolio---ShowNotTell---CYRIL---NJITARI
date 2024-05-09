@@ -33,6 +33,7 @@ This project is a robust data engineering solution designed to handle real-time 
 - unit and integration tests: pytest, unittest, mock
 
 This system is designed with scalability in mind, ensuring that as data volume grows, the infrastructure can handle increased loads without degradation of performance. The use of containerization and infrastructure as code principles demonstrates a modern approach to cloud infrastructure management, allowing for reproducibility and automation.
+![img_2.png](img_2.png)
 - [View Project](https://github.com/CYRIL-NJITARI10/-Portofolio---ShowNotTell---CYRIL---NJITARI/tree/main/CoincapStreamline)
 
 ---
@@ -50,7 +51,7 @@ The project leverages a robust stack of technologies including web scraping tool
 - Visualization and Business Intelligence: Metabase for dashboarding and data insights.
 
 This solution illustrates a sophisticated approach to handling real-time data from various sources, transforming it into actionable insights through a resilient, scalable, and maintainable infrastructure.
-
+![img_5.png](img_5.png)
 - [View Project](https://github.com/CYRIL-NJITARI10/-Portofolio---ShowNotTell---CYRIL---NJITARI/tree/main/NYT_SCRAPING_WoolworthsShop)
 
 ---
@@ -81,6 +82,8 @@ Directly transfers data from the temporary Spark cluster to BigQuery, eliminatin
 
 This project's architecture is designed to be robust and scalable, capable of handling large volumes of data with the flexibility to adapt to different data sources and analytical requirements.
 
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
 - [View Project](https://github.com/CYRIL-NJITARI10/-Portofolio---ShowNotTell---CYRIL---NJITARI/tree/main/CrimesAnalysis_GCP)
 ---
 
@@ -136,6 +139,8 @@ Embarks on a journey from a simple prototype to a fully functional production ap
 - Thorough test coverage with unittest for all components of the application, ensuring quality and performance.
 
 This project exemplifies a sophisticated implementation of machine learning models in a web application, demonstrating the practical use of NLP in improving content categorization and searchability on platforms like StackOverflow.
+
+![img_6.png](img_6.png)
 
 - [View Project](https://github.com/CYRIL-NJITARI10/-Portofolio---ShowNotTell---CYRIL---NJITARI/tree/main/FROM_POC_TO_PROD)
 

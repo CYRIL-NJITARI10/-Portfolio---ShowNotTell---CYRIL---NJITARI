@@ -23,6 +23,7 @@ StackOverflow, a major platform in this field, requires a robust system that can
 - Scalability: Structured codebase that is ready for scaling up to handle increased load and additional features as needed.
 - Robust Testing: Comprehensive test suite for the prediction logic, ensuring reliability and accuracy of the tag predictions.
 
+![img.png](img.png)
 ## How to Use the Service
 - Start the Application: Run the Flask app to start the web service.
 - Access the Interface: Open the provided URL in a web browser to access the prediction interface.
