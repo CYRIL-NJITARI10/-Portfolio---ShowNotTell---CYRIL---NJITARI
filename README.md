@@ -1,4 +1,4 @@
-# [Portofolio] - ShowNotTell - CYRIL - NJITARI 
+# [Portfolio] - ShowNotTell - CYRIL - NJITARI 
 
 ## 👋 Introduction
 Hi, my name is Cyril!
